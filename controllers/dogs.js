@@ -24,16 +24,11 @@ router.get('/dogs', function(req, res) {
     res.render('dogs/index.ejs', context)
 });
 
-// This will display one dog at the index I specify
+// This will display one dog's name at the index I specify
 router.get('/dogs/:dogIndex', function(req, res) {
     console.log(req.params)
     res.send(`<h1>${dogs[req.params.dogIndex].name}</h1>`);
 })
 
-// 
-// router.get('/dogs/:indexOfDog', function(req, res) {
-//     console.log(req.params)
-//     res.send(`<h1>The dog for this url is ${dogs[parseInt(req.params.indexOfDog)]}</h1>`)
-// })
 
 module.exports = router;
