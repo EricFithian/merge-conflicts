@@ -26,7 +26,7 @@ app.get('/*', function(req, res) {
 //     console.log(req.params);
 //     res.send(`<h1>My first paremeter is ${req.params.params} and my second paremeter is ${req.params.secondParam}`)
 // });
-
+console.log("Joshua Pent was here, and he enjoys screwing up your code. >:)")
 
 app.listen(4000, function () {
     console.log(`I am listening on port 4000`);
