@@ -13,6 +13,10 @@ app.get('/hi', function (req, res) {
     res.render('hi.ejs');
 });
 
+app.get('/merge-conflict', function(req, res) {
+    res.send(`These things are literally the worst`)
+})
+
 app.get('/*', function(req, res) {
     res.send(`<h2>You are trying to go to a bad URL. Go back to my site now or else by clicking <a href='http://localhost:4000/dogs'>HERE</a></h2>`)
 });
