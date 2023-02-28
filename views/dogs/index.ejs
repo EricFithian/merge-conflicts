@@ -9,8 +9,10 @@
 <body>
     <h1>Hi I'm choosing a random dog here</h1>
     <% for(let i = 0; i < errorDog.length; i++) { %>
-        <h2><%= errorDog[i].name %></h2>
-        <img src=<%= errorDog[i].pic %> alt="Dog picture">
+        <a href="http://localhost:4000/<%= i %>">
+            <h2><%= errorDog[i].name %></h2>
+            <img src=<%= errorDog[i].pic %> alt="Dog picture">
+        </a>
         <hr>
     <% } %>
 </body>
